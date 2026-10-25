@@ -2,6 +2,8 @@ Retail Sales Intelligence | SQL Server & Power BI
 End-to-end analytical reporting from retail transactions to decision-ready sales, customer, and product insights.
 
 Microsoft SQL Server · T-SQL · Power BI · DAX · Dimensional Modeling · Sales Analytics · Customer Segmentation · KPI Reporting
+
+
 Project outcome: Built a reusable SQL analytics layer and an interactive Power BI executive dashboard to monitor revenue, order activity, average order value, year-over-year performance, monthly sales trends, and product-category contribution.
 
 Executive overview
