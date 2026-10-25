@@ -48,11 +48,7 @@ The Power BI report brings core sales indicators into a single interactive view.
 
 **Reporting improvements delivered:** standardized DAX definitions, a dedicated date table for time intelligence, clear fact/dimension relationships, consolidated KPI presentation, and interactive geographic/time filtering. These are **reporting and usability improvements**, not measured increases in revenue or productivity.
 
-**Power BI report:** [`Sales_Performance_Dashboard.pbix`](reports/Sales_Performance_Dashboard.pbix) *(place your final `.pbix` file at this path before publishing).*
-
-<!-- Optional: after adding a clean exported screenshot, uncomment:
-![Executive Sales Overview](docs/sales_dashboard_preview.png)
--->
+**Power BI report:** [`Sales_Performance_Dashboard.pbix`](Sales_Performance_Dashboard.pbix)
 
 **Data model:** `datasets/fact_sales.csv` stores sales events; `datasets/dim_customer.csv` and `datasets/dim_products.csv` provide descriptive attributes. Power BI additionally uses a **DimDate** calendar table related to sales order dates. Customer and product reporting views are retained as separate analytical datasets rather than introducing unnecessary relationships into the core star schema.
 
