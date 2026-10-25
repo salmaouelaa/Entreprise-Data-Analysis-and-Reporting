@@ -17,15 +17,16 @@ The solution combines:
 - **Interactive reporting:** an Executive Sales Overview page with KPI cards, time-series analysis, category contribution, and Year/Country slicers.
 
 **Scope:** This repository demonstrates the analytics and BI reporting layers. The underlying Gold dataset is provided
+
 ## Business questions answered
 
-| Business question | Analytical approach | Decision-making value |
-| --- | --- | --- |
-| How much revenue are we generating? | Total Revenue, Total Orders, Average Order Value | Track commercial performance using consistent KPIs |
-| How are sales evolving over time? | Monthly revenue trend and previous-year comparison | Spot changes in sales momentum and investigate anomalies |
-| Which product categories contribute most? | Category-level revenue breakdown and contribution analysis | Understand revenue concentration and product mix |
-| Which customers are most valuable? | Customer-level spend, orders, recency, and behavioral segments | Support customer prioritization and retention analysis |
-| Which products outperform or underperform? | Product revenue tiers and historical comparisons | Inform product portfolio and performance reviews |
+| Business question                          | Analytical approach                                            | Decision-making value                                    |
+| ------------------------------------------ | -------------------------------------------------------------- | -------------------------------------------------------- |
+| How much revenue are we generating?        | Total Revenue, Total Orders, Average Order Value               | Track commercial performance using consistent KPIs       |
+| How are sales evolving over time?          | Monthly revenue trend and previous-year comparison             | Spot changes in sales momentum and investigate anomalies |
+| Which product categories contribute most?  | Category-level revenue breakdown and contribution analysis     | Understand revenue concentration and product mix         |
+| Which customers are most valuable?         | Customer-level spend, orders, recency, and behavioral segments | Support customer prioritization and retention analysis   |
+| Which products outperform or underperform? | Product revenue tiers and historical comparisons               | Inform product portfolio and performance reviews         |
 
 ## Power BI | Executive Sales Overview
 
@@ -33,12 +34,12 @@ The Power BI report brings core sales indicators into a single interactive view.
 
 **Executive KPI layer**
 
-| KPI | Definition | Why it matters |
-| --- | --- | --- |
-| **Total Revenue** | Sum of sales amount | Overall sales performance |
-| **Total Orders** | Distinct count of order numbers | Transaction volume without double-counting order lines |
-| **Average Order Value (AOV)** | Total Revenue / Total Orders | Revenue generated per order |
-| **Revenue Growth YoY %** | (Current-period revenue − comparable prior-year revenue) / prior-year revenue | Direction and magnitude of annual change |
+| KPI                           | Definition                                                                    | Why it matters                                         |
+| ----------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------ |
+| **Total Revenue**             | Sum of sales amount                                                           | Overall sales performance                              |
+| **Total Orders**              | Distinct count of order numbers                                               | Transaction volume without double-counting order lines |
+| **Average Order Value (AOV)** | Total Revenue / Total Orders                                                  | Revenue generated per order                            |
+| **Revenue Growth YoY %**      | (Current-period revenue − comparable prior-year revenue) / prior-year revenue | Direction and magnitude of annual change               |
 
 **Analytical visuals**
 
@@ -66,11 +67,11 @@ The `scripts/report_customers.sql` view consolidates customer-level measures suc
 
 Behavioral segmentation uses project-defined rules:
 
-| Segment | Rule |
-| --- | --- |
-| VIP | Observed purchase-history span ≥ 12 months and spend > 5,000 |
+| Segment | Rule                                                         |
+| ------- | ------------------------------------------------------------ |
+| VIP     | Observed purchase-history span ≥ 12 months and spend > 5,000 |
 | Regular | Observed purchase-history span ≥ 12 months and spend ≤ 5,000 |
-| New | Observed purchase-history span < 12 months |
+| New     | Observed purchase-history span < 12 months                   |
 
 ### Product performance
 
@@ -78,17 +79,11 @@ The `scripts/report_products.sql` view supports product-level evaluation through
 
 ## Tools & skills demonstrated
 
-| Area | Skills |
-| --- | --- |
-| **Business Intelligence** | KPI design, executive reporting, dashboard usability, interactive filtering |
-| **Power BI** | Import mode, semantic modeling, relationships, slicers, card/line/bar visuals |
-| **DAX** | `SUM`, `DISTINCTCOUNT`, `DIVIDE`, `CALCULATE`, `SAMEPERIODLASTYEAR`, filter context |
-| **SQL Analytics** | T-SQL, CTEs, joins, aggregation, SQL views, window functions, `LAG` |
-| **Data Modeling** | Fact and dimension tables, star-schema design, date dimension, grain awareness |
-| **Business Analysis** | Sales trends, AOV, customer segmentation, product benchmarking, revenue mix |
-
-
-
----
-
-**Portfolio focus:** Data Analytics · Business Intelligence · Power BI · SQL Server · DAX · Sales Performance Reporting
+| Area                      | Skills                                                                              |
+| ------------------------- | ----------------------------------------------------------------------------------- |
+| **Business Intelligence** | KPI design, executive reporting, dashboard usability, interactive filtering         |
+| **Power BI**              | Import mode, semantic modeling, relationships, slicers, card/line/bar visuals       |
+| **DAX**                   | `SUM`, `DISTINCTCOUNT`, `DIVIDE`, `CALCULATE`, `SAMEPERIODLASTYEAR`, filter context |
+| **SQL Analytics**         | T-SQL, CTEs, joins, aggregation, SQL views, window functions, `LAG`                 |
+| **Data Modeling**         | Fact and dimension tables, star-schema design, date dimension, grain awareness      |
+| **Business Analysis**     | Sales trends, AOV, customer segmentation, product benchmarking, revenue mix         |
